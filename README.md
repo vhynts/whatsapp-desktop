@@ -1,8 +1,12 @@
+<div align="center">
+
+<img src="app-icon.svg" width="100" height="100" alt="WhatsApp Desktop Linux">
+
 # WhatsApp Desktop for Ubuntu (Linux)
 
 Klien desktop WhatsApp native yang sangat ringan (~15 MB binary, ~150 MB RAM) untuk Ubuntu / Linux berbasis **Rust** dan **Tauri v2**. Dibuat sebagai alternatif yang efisien untuk wrapper berbasis Electron yang boros memori.
 
-![WhatsApp Desktop Linux](app-icon.svg)
+</div>
 
 ---
 

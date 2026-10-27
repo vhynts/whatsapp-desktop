@@ -4,7 +4,7 @@
 
 # WhatsApp Desktop for Ubuntu (Linux)
 
-Klien desktop WhatsApp native yang sangat ringan (~15 MB binary, ~150 MB RAM) untuk Ubuntu / Linux berbasis **Rust** dan **Tauri v2**. Dibuat sebagai alternatif yang efisien untuk wrapper berbasis Electron yang boros memori.
+Klien desktop WhatsApp untuk Ubuntu / Linux berbasis **Rust** dan **Tauri v2**. Binary sangat kecil (~16 MB) dan dibangun tanpa bundling runtime Chromium seperti Electron.
 
 </div>
 
@@ -12,7 +12,8 @@ Klien desktop WhatsApp native yang sangat ringan (~15 MB binary, ~150 MB RAM) un
 
 ## ✨ Fitur Utama
 
-- **Sangat Ringan & Efisien:** Hanya mengonsumsi RAM sekitar ~150–200 MB (dibandingkan wrapper Electron yang memakan 500 MB – 1 GB+).
+- **Binary Kecil (~16 MB):** Jauh lebih kecil dibanding paket Electron/Chromium (umumnya 100 MB+).
+- **RAM:** Konsumsi memori mengikuti beban WhatsApp Web itu sendiri (total seluruh proses WebKit sekitar 1–1,4 GB saat aktif digunakan, mirip membuka WhatsApp Web di browser). Tidak ada overhead runtime tambahan dari bundler — hanya engine WebKitGTK bawaan sistem.
 - **Background & Tray Icon (AppIndicator):**
   - Icon hijau WhatsApp aktif di system tray (top panel GNOME / taskbar).
   - Klik kiri: Menampilkan / menyembunyikan jendela (toggle).

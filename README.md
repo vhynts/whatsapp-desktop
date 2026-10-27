@@ -23,6 +23,7 @@ Klien desktop WhatsApp native yang sangat ringan (~15 MB binary, ~150 MB RAM) un
   - Menampilkan nama kontak dan isi pesan chat masuk.
   - Klik banner notifikasi langsung memunculkan dan memfokuskan jendela WhatsApp.
 - **Single Instance Lock:** Mencegah pembukaan jendela ganda secara tidak sengaja. Membuka aplikasi dari launcher saat sudah berjalan akan langsung memfokuskan jendela yang sudah ada.
+- **Offline & No-Internet Handling:** Tampilan offline elegan bergaya tema gelap WhatsApp dengan tombol *Coba Lagi* serta pendeteksi otomatis (*auto-reconnect*) ketika jaringan internet kembali pulih.
 - **Modern User-Agent:** Disesuaikan dengan Google Chrome Linux terbaru sehingga WhatsApp Web selalu berfungsi tanpa peringatan browser tidak didukung.
 
 ---

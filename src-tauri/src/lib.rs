@@ -5,6 +5,8 @@ use tauri::{
     Manager, RunEvent, WindowEvent,
 };
 
+const OFFLINE_HTML: &str = include_str!("../../ui/offline.html");
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     let app = tauri::Builder::default()
@@ -72,6 +74,12 @@ pub fn run() {
                     // Automatically allow notification and media permission requests
                     wv.connect_permission_request(|_wv, req| {
                         req.allow();
+                        true
+                    });
+
+                    // Display friendly offline screen when network is unreachable
+                    wv.connect_load_failed(|wv, _event, _failing_uri, _err| {
+                        wv.load_html(OFFLINE_HTML, Some("https://web.whatsapp.com"));
                         true
                     });
 

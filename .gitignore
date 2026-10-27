@@ -1,0 +1,13 @@
+# Rust / Cargo
+/src-tauri/target/
+/src-tauri/gen/schemas/
+
+# Environment & temporary files
+*.log
+.DS_Store
+*.swp
+*~
+
+# IDE & editors
+.vscode/
+.idea/

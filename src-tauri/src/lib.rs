@@ -20,7 +20,7 @@ pub fn run() {
             let show_i = MenuItem::with_id(app, "show", "Buka WhatsApp", true, None::<&str>)?;
             let menu = Menu::with_items(app, &[&show_i, &quit_i])?;
 
-            let icon_bytes = include_bytes!("../icons/128x128.png");
+            let icon_bytes = include_bytes!("../icons/tray.png");
             let icon = Image::from_bytes(icon_bytes)?;
 
             let _tray = TrayIconBuilder::new()
